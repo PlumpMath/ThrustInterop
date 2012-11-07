@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThrustInteropTest", "ThrustInteropTest\ThrustInteropTest.csproj", "{4A9C0FD2-F0A3-4C3C-B641-8D67C732317E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{10193F6A-F8A3-43DB-AA5D-1488ECE11481} = {10193F6A-F8A3-43DB-AA5D-1488ECE11481}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ThrustInterop", "ThrustInterop\ThrustInterop.vcxproj", "{10193F6A-F8A3-43DB-AA5D-1488ECE11481}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A9C0FD2-F0A3-4C3C-B641-8D67C732317E}.Debug|x86.ActiveCfg = Release|x86
+		{4A9C0FD2-F0A3-4C3C-B641-8D67C732317E}.Debug|x86.Build.0 = Release|x86
+		{4A9C0FD2-F0A3-4C3C-B641-8D67C732317E}.Release|x86.ActiveCfg = Release|x86
+		{4A9C0FD2-F0A3-4C3C-B641-8D67C732317E}.Release|x86.Build.0 = Release|x86
+		{10193F6A-F8A3-43DB-AA5D-1488ECE11481}.Debug|x86.ActiveCfg = Release|Win32
+		{10193F6A-F8A3-43DB-AA5D-1488ECE11481}.Debug|x86.Build.0 = Release|Win32
+		{10193F6A-F8A3-43DB-AA5D-1488ECE11481}.Release|x86.ActiveCfg = Release|Win32
+		{10193F6A-F8A3-43DB-AA5D-1488ECE11481}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

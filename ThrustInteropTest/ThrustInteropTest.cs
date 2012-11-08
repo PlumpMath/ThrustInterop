@@ -14,26 +14,28 @@ namespace LWisteria.ThrustInterop
 		static extern void Fill(IntPtr vec, int size, double value);
 
 		[DllImport(DLL_NAME)]
+		static extern double Length2(IntPtr vec, int size);
+
+		[DllImport(DLL_NAME)]
 		static extern void CopyTo(IntPtr vec, double[] array, int size);
 
 		[DllImport(DLL_NAME)]
 		static extern void Delete(IntPtr vec);
 
-		const int N = 13;
+		const int N = 1300;
+		const double VALUE = 9.56;
 
 		static int Main()
 		{
 			IntPtr vec = Create(N);
 
-			Fill(vec, N, 9.56);
+			Fill(vec, N, VALUE);
+
+			double result = Length2(vec, N);
+			Console.WriteLine("result = {0}, answer = {1}", result, N * VALUE * VALUE);
 
 			var array = new double[N];
 			CopyTo(vec, array, N);
-
-			foreach(var value in array)
-			{
-				Console.WriteLine(value);
-			}
 
 			Delete(vec);
 
